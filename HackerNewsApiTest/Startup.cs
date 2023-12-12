@@ -1,11 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
-using HackerNewsApiService;
+﻿using HackerNewsApiService;
 
 namespace HackerNewsApiTest;
 
@@ -21,10 +14,6 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-        //.AddNewtonsoftJson(options =>
-        //{
-        //    options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-        //});
         services.AddMemoryCache();
         services.AddHttpClient();
         services.Configure<AppSettings>(Configuration);
