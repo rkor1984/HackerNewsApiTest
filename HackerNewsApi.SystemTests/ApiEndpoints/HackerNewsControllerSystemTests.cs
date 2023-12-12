@@ -21,7 +21,7 @@ public class HackerNewsControllerSystemTests : IClassFixture<WebApplicationFacto
         // Arrange
 
         // Act
-        var response = await _client.GetAsync($"/HackerNews/{n}");
+        var response = await _client.GetAsync($"/HackerNews/top/{n}");
 
         // Assert
         response.EnsureSuccessStatusCode(); 

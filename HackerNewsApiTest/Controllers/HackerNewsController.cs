@@ -12,7 +12,7 @@ public class HackerNewsController : ControllerBase
         _hackerNewsService = hackerNewsService ?? throw new ArgumentNullException(nameof(hackerNewsService));
     }
 
-    [HttpGet("{n}")]
+    [HttpGet("top/{n}")]
     public async Task<ActionResult<IEnumerable<Story>>> GetBestStories(int n)
     {
         try
