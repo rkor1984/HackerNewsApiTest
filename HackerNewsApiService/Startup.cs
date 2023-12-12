@@ -1,4 +1,6 @@
 ﻿
+using HackerNewsApiService.Services;
+using HackerNewsApiService.Services.IServices;
 using Microsoft.Extensions.DependencyInjection;
 namespace HackerNewsApiService;
 public static class Startup

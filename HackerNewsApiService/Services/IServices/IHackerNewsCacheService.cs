@@ -1,4 +1,9 @@
-﻿public interface IHackerNewsCacheService
+﻿using HackerNewsApiService.Models;
+
+namespace HackerNewsApiService.Services.IServices
 {
-    Task<IEnumerable<Story>> GetBestStoriesAsync(int n);
+    public interface IHackerNewsCacheService
+    {
+        Task<IEnumerable<Story>> GetBestStoriesAsync(int n);
+    }
 }

@@ -1,4 +1,7 @@
-﻿public class AppSettings
+﻿namespace HackerNewsApiService.Settings
 {
-    public HackerNewsApi HackerNewsApi { get; set; }
+    public class AppSettings
+    {
+        public HackerNewsApi HackerNewsApi { get; set; }
+    }
 }

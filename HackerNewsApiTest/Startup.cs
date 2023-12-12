@@ -1,4 +1,5 @@
 ﻿using HackerNewsApiService;
+using HackerNewsApiService.Settings;
 
 namespace HackerNewsApiTest;
 

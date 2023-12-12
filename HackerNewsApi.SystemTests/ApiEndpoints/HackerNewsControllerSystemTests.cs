@@ -4,26 +4,27 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-public class HackerNewsControllerSystemTests : IClassFixture<WebApplicationFactory<Startup>>
+namespace HackerNewsApi.SystemTests.ApiEndpoints
 {
-    private readonly HttpClient _client;
-
-    public HackerNewsControllerSystemTests(WebApplicationFactory<Startup> factory)
+    public class HackerNewsControllerSystemTests : IClassFixture<WebApplicationFactory<Startup>>
     {
-        _client = factory.CreateClient();
-    }
+        private readonly HttpClient _client;
 
-    [Theory]
-    [InlineData(5)]
-    [InlineData(10)]
-    public async Task GetBestStories_Should_Return_OK(int n)
-    {
-        // Arrange
+        public HackerNewsControllerSystemTests(WebApplicationFactory<Startup> factory)
+        {
+            _client = factory.CreateClient();
+        }
 
-        // Act
-        var response = await _client.GetAsync($"/HackerNews/top/{n}");
+        [Theory]
+        [InlineData(5)]
+        [InlineData(10)]
+        public async Task GetBestStories_Should_Return_OK(int n)
+        {
+            // Act
+            var response = await _client.GetAsync($"/HackerNews/top/{n}");
 
-        // Assert
-        response.EnsureSuccessStatusCode(); 
+            // Assert
+            response.EnsureSuccessStatusCode();
+        }
     }
 }
