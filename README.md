@@ -7,7 +7,7 @@ This is a simple .NET Core application that retrieves and caches information fro
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Approach](#Approach)
-  - [Possible Enhancements](#Possible Enhancements)
+  - [Possible Enhancements](#PossibleEnhancements)
 
 
 
@@ -31,11 +31,9 @@ This is a simple .NET Core application that retrieves and caches information fro
 8. Writtent a unit test to test the Service Logic
 9. Written System test to test Controller End points from this API.
     
-### Possible Enhancements
+### PossibleEnhancements
 1. More Logging can be done
 2. Error Handling Middleware can be implemented to save us from hadling common errors in the code again and again
 3. Input Validation can be added, to make sure, user is not requesting too large data in one go.
 4. Rate Limiting can be done, to ensure api is not abused by Malicius  users.
 5. Authentication and Authorization is must if Only specific users are allowed to access it, In case it is public api, than that is not the issue.
-   
-7. 
