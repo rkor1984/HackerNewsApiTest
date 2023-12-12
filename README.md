@@ -16,4 +16,4 @@ This is a simple .NET Core application that retrieves and caches information fro
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/hacker-news-api-client.git
+   git clone https://github.com/rkor1984/HackerNewsApiTest.git
