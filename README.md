@@ -7,7 +7,7 @@ This is a simple .NET Core application that retrieves and caches information fro
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Approach](#Approach)
-  - [PossibleEnhancements](#Possible Enhancements)
+  - [Enhancements](#Possible Enhancements)
 
 
 
