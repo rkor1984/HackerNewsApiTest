@@ -7,7 +7,7 @@ This is a simple .NET Core application that retrieves and caches information fro
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Approach](#Approach)
-  - [PossibleEnhancements](#PossibleEnhancements)
+  - [PossibleEnhancements](#Possible Enhancements)
 
 
 
@@ -31,7 +31,7 @@ This is a simple .NET Core application that retrieves and caches information fro
 8. Writtent a unit test to test the Service Logic
 9. Written System test to test Controller End points from this API.
     
-### PossibleEnhancements
+### Possible Enhancements
 1. More Logging can be done
 2. Error Handling Middleware can be implemented to save us from hadling common errors in the code again and again
 3. Input Validation can be added, to make sure, user is not requesting too large data in one go.
